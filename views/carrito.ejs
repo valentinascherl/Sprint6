@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head') %>
+    <link rel="stylesheet" href="/stylesheets/carritostyle.css">
+</head>
+
+<body>
+    <%- include('./partials/header') %>
+    <main class="container-fluid">
+        <div class="titulo">
+            <h1><i class="fas fa-cart-arrow-down"></i>Carrito de compras</h1>
+        </div>
+        <div class="todo">
+            <div class="container products-wrapper">
+                <div class="row">
+                    <div class="col-12 col-lg-12">
+                        <section class="products-box">
+                            <a href="">
+                                <figure class="products-box-image">
+                                    <img src="/images/Productos/spining.webp" height="120px" width="100px">
+                                </figure>
+                                <article class="product-box_data">
+                                    <p>Bicicleta de Spinning</p>
+                                </article>
+                            </a>
+                            <div class="form">
+                                <label for="">Cantidad de items</label>
+                                <select class="options  custom-select col-7 col-sm-12" name="" id="">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <i class="fas fa-trash-alt"></i>
+                                <span>$000</span>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-12">
+                        <section class="products-box">
+                            <a href="">
+                                <figure class="products-box-image">
+                                    <img src="/images/Productos/bolsa.webp" height="120px" width="100px">
+                                </figure>
+                                <article class="product-box_data">
+                                    <p>Bolsa de boxeo</p>
+                                </article>
+                            </a>
+                            <div class="form">
+                                <label for="">Cantidad de items</label>
+                                <select class="options  custom-select col-7 col-sm-12" name="" id="">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <i class="fas fa-trash-alt"></i>
+                                <span>$000</span>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class=" pago col-lg-5">
+                <div class="resumen">
+                    <h1>RESUMEN DE COMPRA</h1>
+                    <div class="subtotal">
+                        <h2>Subtotal (sin envio):<span>$000</span></h2>
+                    </div>
+                    <div class="envio">
+                        <h2><i class="fas fa-shipping-fast"></i>Costo de envio:</h2>
+                        <textarea class="form-control" name="comentario" id="" cols="25" rows="1"
+                            placeholder="Ingrese su codigo postal"></textarea>
+                        <p><button class="btn btn-danger col-4" type="submit">Calcular</button></p>
+                    </div>
+                    <div class="total">
+                        <h1>TOTAL:<span>$000</span></h1>
+                    </div>
+                    <div class="comprar">
+                        <p><a href="">Seguir comprando</a></p>
+                        <button class="btn btn-danger col-12 " type="submit">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!--Footer-->
+    <%- include('./partials/footer') %>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>

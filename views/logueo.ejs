@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <%- include('./partials/head') %>
+        <link rel="stylesheet" href="/stylesheets/logueo.css">
+        </head>
+   <!-- <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOME GYM</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="../public/stylesheets/registro.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <script src="https://kit.fontawesome.com/32d4ddb813.js" crossorigin="anonymous"></script>
+    </head>
+--> 
+
+<body class="body">
+    <%- include('./partials/header') %>
+    <% if(typeof errors != 'undefined'){ %>
+        <p style="color:red">ERROR</p>
+        <ul>
+            <% for(let i=0; i < errors.lenght; i++){ %>
+                <li>
+                    <%= errors[i].msg %>
+                </li>
+                <%}%>
+        </ul>
+        <%}%>
+    <div class="container-fluid">
+        <div class="banner-logueo">
+           
+        <img src="/images/Visuales/9.png" width="100%">
+        </div>
+        <div class="container main">
+    
+ 
+   
+            <div class="row justify-content-center">
+
+                <div class="iniciar-sesion">
+                    <h2 class="titulo col-12">Inciar Sesión</h2>
+                    <form>
+
+                        <div class="form-row">
+                            <div class="form-group col-12 col-md-12">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" name="email" required>
+                               <small>Nadie sabrá tu dirección de email.
+                                </small>
+                            </div>
+                            <div class="form-group col-12 col-md-12">
+                                <label for="inputPassword4">Contraseña</label>
+                                <input type="password" class="form-control" id="inputPassword4" name="contrasena" required>
+                            </div>
+                            <a href="#">
+                                <h4 class="col-12">Olvidé mi contraseña</h4>
+                            </a>
+                        </div>
+                        
+                        <div class="form-group form-check col-12">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-danger col-6">Ingresar</button>
+                        <p></p>
+                        <a href="/registro">
+                            <h4 class="col-12">¿No estás registrado? Regístrate</h4>
+                        </a>
+                    </form>
+
+                </div>
+            </div>
+            </div>
+
+    </div>
+    <%- include('./partials/footer') %>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

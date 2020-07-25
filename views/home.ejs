@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head') %>
+    <link rel="stylesheet" href="/stylesheets/homestyle.css">
+</head>
+
+<body>
+    <%- include('./partials/header') %>
+    
+    <main class="container-fluid">
+        <div class="banner-home">
+            <div class="banner-oferta">
+            
+            <img src="/images/Visuales/1.png" width="100%" >
+            </div>
+        <!--Ofertas-->
+        <div class="container products-wrapper">
+            <div class="row">
+                <% for(products of productosAMostrar){
+                    if(products.category == 'in-sale'){%>
+                <div class="productos col-12 col-sm-6 col-lg-4">
+                    <section class="products-box">
+                        <a href="/productos/detalle/<%= products.id %>">
+                            <figure class="products-box-image">
+                                <img src="/images/Productos/<%= products.image %>">
+                            </figure>
+                            <article class="product-box_data">
+                                <h2>$<%= products.price %></h2>
+                                <% if(products.discount !== 0){ %>
+                                <span><%= products.discount %>% OFF</span>
+                                <%}%>
+                                <p><%= products.name %></p>
+                                <i class="fas fa-cart-arrow-down"></i>
+                            </article>
+                        </a>
+                    </section>
+                </div>
+                <%}
+                }%>
+            </div>
+        </div>
+        <div class="banner-home"><img src="/images/Visuales/2.png" width="100%"></div>
+        <!--Nuevos productos-->
+        <div class="container products-wrapper">
+            <div class="row">
+                <% for(products of productosAMostrar){
+                            if(products.category == 'new'){%>
+                <div class="productos1 col-12 col-sm-6 col-lg-4">
+                    <section class="products-box">
+                        <a href="/productos/detalle/<%= products.id %>">
+                            <figure class="products-box-image">
+                                <img src="/images/Productos/<%= products.image %>">
+                            </figure>
+                            <article class="product-box_data-new">
+                                <h2>$<%= products.price %></h2>
+                                <p><%= products.name %></p>
+                                <i class="fas fa-cart-arrow-down"></i>
+                            </article>
+                        </a>
+                    </section>
+                </div>
+                <%}
+		                }%>
+            </div>
+        </div>
+        </div>
+        </div>
+    </main>
+    <!--Footer-->
+    <%- include('./partials/footer') %>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/32d4ddb813.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

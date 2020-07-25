@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <%- include('./partials/head') %>
+        <link rel="stylesheet" href="/stylesheets/registro.css">
+        </head>
+
+<body class="body">
+    <%- include('./partials/header') %>
+    <% if (typeof(mensaje) != "undefined") { %>
+        <p style="color: green; font-size: 20px;"> <%= mensaje %>  </p>
+    <% } %>
+
+    <% if (typeof errors != 'undefined') { %>
+        <p style="color: red; font-size: 15px; font-family:'Kreon', serif">Se han encontrado 1 o varios errores:</p>
+        <ul style= "color: red; font-size: 15px; font-family:'Kreon', serif">
+            <% for (var i = 0; i < errors.length; i++){ %>
+            <li>
+                <%= errors[i].msg %>
+            </li>
+            <% } %>
+        </ul>
+    <% } %>
+
+    <div class="container-fluid">
+        <div class="banner-registro">
+        <img src="/images/Visuales/8.png" width="100%" >
+        </div>
+        <div class="container main">
+    
+            <div class="row justify-content-center">
+                <div class="registrarse">
+                    <h2 class="titulo col-12">Registrarme</h2>
+                    <form method="POST" action="/registro" id="formRegistro">
+                        <div class="form-row">
+                            <div class="form-group col-12 col-md-6">
+                                <label for="inputEmail4">Nombre</label>
+                                <input type="text" class="form-control nombre" id="inputEmail4" name="nombre" required>
+                                <div class="nombre-invalido"></div>
+                            </div>
+                            <div class="form-group col-12 col-md-6">
+                                <label for="inputPassword4">Apellido</label>
+                                <input type="text" class="form-control apellido" id="inputPassword4" name="apellido" required>
+                                <div class="apellido-invalido"></div>
+                            </div>
+                          
+                        </div>
+                        <div class="form-group">
+                            <label for="avatar"><strong>Elige una foto que represente: </strong></label><p></p>
+                            <input type="file" id="avatar" name="avatar" accept=".jpg,.png">
+                        </div>
+                        <div class="form-row">
+                            
+                            <div class="form-group col-12 col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control email" id="inputEmail4" name="email" required>
+                                <small>Nadie sabrá tu dirección de email.
+                                </small>
+                                <div class="email-invalido"></div>
+                            </div>
+                            <div class="form-group col-12 col-md-6">
+                                <label for="inputPassword4">Contraseña</label>
+                                <input type="password" class="form-control contrasena" id="inputPassword4" name="contrasena" required>
+                                <div class="contrasena-invalida"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Domicilio</label>
+                            <input type="text" class="form-control" id="inputAddress" name="domicilio" placeholder="Ejemplo: Aristides 241, Ciudad, Mendoza." required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-12 col-md-5">
+                                <label for="inputCity">Ciudad</label>
+                                <input type="text" class="form-control" id="inputCity" name="ciudad" required>
+                            </div>
+                            <div class="form-group col-12 col-md-4">
+                                <label for="inputState">Departamento</label>
+                                <select id="inputState" class="form-control" name="departamento" required>
+                                    <option selected>Departamento...</option>
+                                    <option>Luján de Cuyo</option>
+                                    <option>Ciudad</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-6 col-md-3">
+                                <label for="inputZip">Código postal</label>
+                                <input type="text" class="form-control" id="inputZip" name="cp" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-danger">Registrarme y comenzar!</button>
+                        <p></p>
+                        <small>No te arrepentirás </small> <i class="far fa-smile-wink"></i>
+                       
+                        <p></p>
+                        <p></p>
+                    </form>
+
+
+                </div>
+
+
+            </div>
+            </div>
+
+    </div>
+   
+        </div>
+    <%- include('./partials/footer') %>
+
+
+    <script src="/js/registroValidator.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

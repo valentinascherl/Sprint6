@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head') %>
+    <link rel="stylesheet" href="/stylesheets/estilos.css">
+</head>
+
+<body>
+    <%- include('./partials/header') %>
+    <div class="centrar-texto-admin-p">
+        <h3>Administrar productos</h3>
+    </div>
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Categoría</th>
+                        <th scope="col">Editar</th>
+                        <th scope="col">Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for(products of products){%>
+                    <tr>
+                        <th scope="row"><%= products.name %></th>
+                        <td>$<%= products.price %></td>
+                        <td><%= products.category %></td>
+                        <td><a href="/productos/<%= products.id %>/editar" class="action-button edit"><i class="fas fa-edit"></i></a></td>
+                        <td><form action="/productos/eliminar/<%= products.id %>?_method=DELETE" method="POST" style="display: inline-flex">
+							<button type="submit" class="action-button delete btn btn-primary"><i class="fas fa-backspace"></i></button>
+						</form></td>
+                    </tr>
+                    <%}%>
+                </tbody>
+            </table>
+            <a href="/productos/crear" class="btn btn-danger">Agregar producto</a>
+        </div>
+    </div>
+    <%- include('./partials/footer') %>
+</body>
+
+</html>

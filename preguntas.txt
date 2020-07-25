@@ -1,0 +1,7 @@
+1. Como mostrar las fotos del carrousel de forma dinamica
+2. Esta bien los image1, image2, comentario1,2,....
+3. Como hacer scroll en carrito
+4. Como hacer con las hojas de estilo
+5. que haces dinamico en registro
+6. que hacer dinamico en carrito
+7. Se me sube la tercer foto de spinning cuando cambio,m como lo arreglo

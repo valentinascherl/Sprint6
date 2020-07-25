@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head') %>
+    <link rel="stylesheet" href="/stylesheets/homestyle.css">
+
+</head>
+
+
+<body >
+    <%- include('./partials/header') %>
+    <main class="container-fluid">
+        <div class="banner-cardio">
+
+        <div class="banner" style="margin-bottom: 30px;">
+            <img src="/images/visuales/3.png" width="100%">
+        </div>
+        </div>
+
+        <div class="container products-wrapper">
+            <div class="row">
+                <% for(products of productosAMostrar){
+                if(products.seccion == 'cardio'){%>
+                <div class="productos col-12 col-sm-6 col-lg-4">
+                    <section class="products-box">
+                        <a href="/products/<%= products.id %>">
+                            <figure class="products-box-image">
+                                <img src="/images/Productos/<%= products.image %>">
+                            </figure>
+                            <article class="product-box_data">
+                                <h2>$<%= products.price %></h2>
+                                <% if(products.discount !== 0){ %>
+                                <span><%= products.discount %>% OFF</span>
+                                <%}%>
+                                <p><%= products.name %></p>
+                              
+                                <input type="hidden" id="idproducto" name="idproducto" placeholder="" class="form-input" value="<%= productToEdit.idproducto %>">
+                           
+                                <i class="fas fa-cart-arrow-down"></i>
+                            </article>
+                        </a>
+                    </section>
+                </div>
+                <%}
+            }%>
+            </div>
+            </div>
+    </main>
+
+    <%- include('./partials/footer') %>
+</body>
+
+</html>

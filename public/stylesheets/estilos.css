@@ -1,0 +1,59 @@
+/* Color rojo de los botones / Backgrounds */
+
+.color-rojo-boton {
+    background-color: rgb(146, 0, 0);
+}
+
+
+/* Cardio.ejs */
+
+.titulo-de-pagina-cardio {
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.fila-con-productos-p {
+    padding-bottom: 15px;
+}
+
+.paginacion-p {
+    padding-top: 15px;
+}
+
+.active span {
+    background-color: rgb(146, 0, 0) !important;
+    border-color: rgb(146, 0, 0) !important;
+}
+
+.page-item a {
+    color: #000;
+}
+
+
+/* Admin.ejs */
+
+.centrar-texto-admin-p {
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Contacto.ejs */
+.container-fluid{
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+div label {
+    color: white;
+}
+.container-contacto-p {
+    
+    border: 5px solid rgb(146, 0, 0);
+    border-radius: 0.5%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: black;
+}

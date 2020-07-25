@@ -1,0 +1,35 @@
+/* Cardio.ejs */
+
+.banner{
+    background-color: black !important;
+}
+div a{
+   text-decoration: black none;
+}
+/* Color rojo de los botones / Backgrounds */
+.color-rojo-boton {
+    background-color: rgb(146, 0, 0);
+}
+.titulo-de-pagina-cardio {
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.fila-con-productos-p {
+    padding-bottom: 15px;
+}
+
+.paginacion-p {
+    padding-top: 15px;
+}
+
+.active span {
+    background-color: rgb(146, 0, 0) !important;
+    border-color: rgb(146, 0, 0) !important;
+}
+
+.page-item a {
+    color: #000;
+}

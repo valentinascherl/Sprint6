@@ -1,0 +1,70 @@
+
+/*MAIN*/
+.container-fluid{
+    background-color:  black;
+ 
+ background-repeat: no-repeat;
+ background-size: cover;
+ padding-right: 0px !important;
+padding-left: 0px !important;
+padding-bottom: 300px !important;
+ 
+ }
+ .banner-logueo img{
+    height: 400px;
+    width: 100%;
+}
+ .main{
+     background-color:  black;
+     color: rgb(255, 241, 241);
+     margin-top: 20px;
+    margin-bottom: 20px;
+    border: rgb(146, 0, 0) dotted 4px;
+     
+ }
+ .titulo{
+     margin: 60px 0px 40px -30px;
+ 
+ 
+ }
+ .iniciar-sesion{
+     margin-left: 20px;
+     margin-right: 20px;
+ }
+ a h4{
+     font-size: 20px;
+     margin-top: -10px;
+     color:  red
+ }
+ .iniciar-sesion{
+     margin-left: 20px;
+     margin-right: 20px;
+     margin-bottom: 80px;
+ }
+ 
+ 
+ /* Media-Queries */
+ 
+ @media(max-width:425px){
+     .main-header{
+         position: fixed;
+         top: 0;
+         z-index: 20;
+     }
+     html, body{
+         font-size: 18px;
+         padding-top: 3.9em;
+     }
+ }
+ 
+ 
+ 
+ 
+ @media (min-width: 1024px) {
+     .container-fluid{
+ 
+ 
+    
+     }
+ }
+ 

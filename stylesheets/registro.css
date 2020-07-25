@@ -1,0 +1,138 @@
+/*HEADER*/
+.main-header {
+    padding: 15px 0;
+    background-color: #DDDDDD;
+    z-index: 2;
+}
+.header{
+    background-color: #DDDDDD;
+}
+.main-header_home-link{
+    display: block;
+}
+.row{
+    justify-content: center;
+}
+.imagen{
+    width: 100%;
+}
+.btn-nav-toggler{
+    margin: 0 auto;
+    background-color: #811107;
+}
+
+
+
+/*MAIN*/
+.container-fluid{
+   background-color: #DDDDDD;
+
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+.main{
+    background-color: rgba(102, 96, 96, 0.63);
+    color: rgb(255, 241, 241);
+    
+}
+.titulo{
+    margin: 60px 0px 40px -30px;
+
+
+}
+.iniciar-sesion{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+a h4{
+    font-size: 20px;
+    margin-top: -10px;
+    color: lightblue;
+}
+
+.registrarse{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+small i {
+    color: red;
+}
+
+/*FOOTER*/
+footer{
+    background-color:#DDDDDD;
+}
+.redes li, .medios li{
+    list-style: none;
+    padding: 10px;
+}
+footer h2{
+  
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: underline;
+}
+.medios{
+    display: flex;
+}
+.medios li{
+    align-self: center;
+    position: relative;
+    margin-left: 0px;
+    left: -15px;
+}
+.instagram{
+    position: relative;
+    left: -15px;
+}
+.wpps{
+    position: relative;
+    left: -8px;
+}
+.mail{
+    position: relative;
+    left: -5px;
+}
+.fb{
+    position: relative;
+    left: -5px;
+}
+.tw{
+    position: relative;
+    left: -5px;
+}
+.wp{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 2350px;
+    z-index: 1;
+}
+
+/* Media-Queries */
+
+@media(max-width:425px){
+    .main-header{
+        position: fixed;
+        top: 0;
+        z-index: 20;
+    }
+    html, body{
+        font-size: 18px;
+        padding-top: 3.9em;
+    }
+}
+
+
+
+
+@media (min-width: 1024px) {
+    .container-fluid{
+        background: url(../images/Visuales/ejercicios-en-casa.jpg) no-repeat center center;
+        background-size: cover;
+
+   
+    }
+}

@@ -1,0 +1,86 @@
+Secciones:
+
+1. CARDIO:
+	1.1.Bicicletas
+	1.2 Cintas de correr
+	1.3 Escaladores
+	1.4 Remeros
+	1.5 Elíptico
+
+2. PESAS:
+	2.1 Mancuernas (2,5 kg / 5 kg / 7,5 kg ... hasta 30 kg)
+	2.2 Discos ( 1 y 1/4 kg, 2,5 kg, 5 kg, 7,5 kg, 10 kg, 12,5 kg, 15 kg ... hasta 20 kg)
+	2.3 Kettlebell (Pesa rusa)
+	2.4 Bolsas bulgaras de peso
+
+3. BARRAS: (cada barra viene con dos topes)
+	3.1 Barra olímpica larga (20 kg)
+	3.2 Barra normal larga y corta (12 kg aprox)
+	3.3 Barra de dominadas
+
+4. BANCOS: 
+	4.1 Banco de press de banca
+	4.2 Banco scott
+
+5. RACKS: (donde se dejan las pesas y barras)
+	5.1 Rack de barras
+	5.2 Rack de discos
+	5.3 Rack de mancuernas
+	5.4 Rack de barras y discos
+
+
+6. COMPLEMENTOS
+	6.1 Colchonetas
+	6.2 Bozu
+	6.3 Sogas para saltar
+	6.4 Bandas de fuerza
+	6.5 Paralelas
+	6.6 Arcos
+	6.7 Pelotas con peso
+	6.8 TRX
+	6.9 Trampolines
+	
+7. SALUD
+	7.1 Rollos
+	7.2 Masajeador eléctrico
+	
+
+8. ACCESORIOS:
+	8.1 Botellas deportivas
+	8.2 Shakers
+	8.3 Guantes
+9. PISO: 
+	9.1. Piso de espuma
+	9.2. Piso de goma
+
+
+10. PACKS:
+	10.1. Pack Musculación:
+		10.1.1 Básico:
+			 Par de mancuernas, 1 Barra olímpica larga, 1 Banco de press de banca, 1 Colchoneta,  1 Barra de dominadas
+		
+		10.1.2 Medio: 
+			Pack básico + 1 Kettlebell, Par de arcos, 1 Botella deportiva
+
+		10.1.3 Full:
+			Pack medio + 1 Bolsa bulgara de peso, 1 Banco Scott, Piso a elección (falta ver tamaño), 1 Shaker, Par de guantes, Otro Par de Mancuernas
+
+	10.2. Pack Cardio:
+		10.2.1 Básico:
+			1 Kettlebell, 1 Colchoneta, 1 Soga para saltar, 1 Banda de fuerza, 1 Trampolin
+		
+		10.2.2: Medio:
+			Pack Básico + Bicicleta + 1 Botella deportiva + 1 Bolsa bulgara de peso.
+		
+		10.2.3 Full: 
+			Pack Medio + TRX + 1 Pelota con peso + Piso a elección + Guantes + Shaker + Par de mancuernas
+
+	10.3. Pack Streching:
+		10.3.1 Básico:
+		 	Colchoneta, Banda de fuerza, Rollo
+		
+		10.3.2: Full:
+			Pack Básico + Masajeador eléctrico + Piso a elección
+		
+
+		

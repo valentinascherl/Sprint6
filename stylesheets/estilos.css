@@ -1,0 +1,23 @@
+/* Color rojo de los botones / Backgrounds */
+
+.color-rojo-boton {
+    background-color: rgb(146, 0, 0);
+}
+
+
+
+
+/* Admin.ejs */
+
+.centrar-texto-admin-p {
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Contacto.ejs */
+
+.container-contacto-p {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}

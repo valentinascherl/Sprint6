@@ -1,0 +1,443 @@
+
+.container-fluid{
+    background-color:  white;
+}
+
+.container{
+    background-color: black;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+
+
+
+/*FOTOS*/
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgb(146, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgb(146, 0, 0);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color:transparent;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: rgb(146, 0, 0);
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+
+
+/*MAIN*/
+.main{
+    border: 5px solid rgb(146, 0, 0);
+    border-radius: 0.5%;
+}
+.breadcrumb{
+    background-color:white;
+}
+ol li a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.imagen{
+    border-right: 1px solid  #DDDDDD;;
+}
+.nuevo{
+padding-bottom: 20px;
+color: black;
+
+}
+.nombre{
+    margin: 30px 0px;
+}
+.fotos-chicas{
+    border: 1px solid black;
+}
+
+.h2-detalle-nombre{
+    font-size: 45px;
+    border-bottom: 0.5px black solid;
+    padding: 5px 0px;
+    margin: 20px 0px;
+    display: inline;
+
+}
+.h2-detalle-precio{
+    margin: 50px 0px 0px 0px;
+    font-size: 45px;
+}
+
+.precioViejo{
+    color: green;
+    font-size: 20px;
+}
+
+
+.descripcion{
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+.h3-detalle-descripcion{
+    font-size: 45px;
+    line-height: 1.8;
+    text-align: justify;
+    padding-left: -3px;
+    padding-right: 20px;
+    font-weight: 400;
+}
+.h4-detalle-stock{
+    color:rgb(146, 0, 0);
+    font-weight: 500;
+    padding: 0px 0px 20px 0px;
+
+}
+
+.envio{
+    margin-bottom: 10px;
+}
+.selecciona{
+    padding: 10px;
+    display: flex;
+    margin-bottom: 20px;
+}
+form select{ 
+    margin-top: 10px;
+}
+.color form{
+ margin-left: -12px;
+}
+
+.cantidad{
+    margin-left: 80px;
+}
+
+.btn-comprar{
+    display: flex;
+  float: left;
+}
+.btn-c{
+    background-color:rgb(146, 0, 0); ;
+    padding: 15px;
+    border-radius: 6%;
+    color: white;
+    border: rgb(146, 0, 0) solid 1px;
+}
+.btn-agregar{
+    display: flex;
+}
+.btn-a{
+    background-color:white; ;
+     border: rgb(146, 0, 0) solid 1px;
+    padding: 15px;
+    border-radius: 6%;
+    color: rgb(146, 0, 0);
+}
+.botones{
+    margin-bottom: 10px;
+}
+.relacionados-extra{
+    display: none;
+
+}
+
+.h5-productos-relacionados{
+    margin-top: 15px;
+    color: white;
+    background-color:rgb(146, 0, 0);
+    padding: 6px;
+    margin-bottom: 30px;
+    text-align: center;
+    display: inline-block;
+}
+.card-img{
+    border: 1px black solid;
+    border-radius: 1%;
+    margin: 10px;
+}
+.barrita{
+    margin-top: 15px;
+    background-color:#DDDDDD;
+    padding: 6px;
+    margin-bottom: 30px;
+    text-align: center;
+    display: inline-block;
+    color: #DDDDDD;
+}
+
+
+
+
+.h4-masInfo{
+    z-index: 10;
+    position: relative;
+    bottom: 50%;
+    
+    width: 100%;
+  
+    background-color: rgba(146, 0, 0, 0.329);
+    text-align: center;
+}
+.h4-masInfo a{
+color: white;
+}
+
+
+
+
+
+    /*Main- Caractisitcas*/
+
+
+    .caracteristicas{ 
+        border-top: 1px solid #DDDDDD;
+    }
+
+    .opiniones{
+        margin-top: 83px;
+        border-top: 1px solid #DDDDDD;
+        
+    }    
+
+
+
+
+
+
+
+
+
+/* 3D Slideshow */ 
+
+
+#slideshow {
+	padding-top: 50px;
+	height: 600px;
+	width: 100%;
+    box-sizing: border-box;
+    margin-bottom: -210px;
+}
+
+
+.sub-heading {
+	padding-top: 50px;
+	font-size: 18px;
+} .sub-heading-two {
+	font-size: 15px;
+} .sub-heading-three {
+	font-size: 13px;
+} .sub-heading-four {
+	font-size: 11px;
+} .sub-heading-five {
+	font-size: 9px;
+} .sub-heading-six {
+	font-size: 7px;
+} .sub-heading-seven {
+	font-size: 5px;
+} .sub-heading-eight {
+	font-size: 3px;
+} .sub-heading-nine {
+	font-size: 1px;
+}
+
+.entire-content {
+    margin-left: 43%;
+	width: 190px;
+	perspective: 1000px;
+	position: relative;
+    padding-top: 5px;
+
+}
+
+.content-carrousel {
+	width: 100%;
+	position: absolute;
+	float: right;
+	animation: rotar 60s infinite linear;
+	transform-style: preserve-3d;
+}
+
+.content-carrousel:hover {
+	animation-play-state: paused;
+	cursor: pointer;
+}
+
+.content-carrousel figure {
+	width: 100%;
+	height: 190px;
+	/*border: 1px solid #3b444b;*/
+	overflow: hidden;
+	position: absolute;
+}
+
+.content-carrousel figure:nth-child(1) {
+	transform: rotateY(0deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(2) {
+	transform: rotateY(40deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(3) {
+	transform: rotateY(80deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(4) {
+	transform: rotateY(120deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(5) {
+	transform: rotateY(160deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(6) {
+	transform: rotateY(200deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(7) {
+	transform: rotateY(240deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(8) {
+	transform: rotateY(280deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(9) {
+	transform: rotateY(320deg) translateZ(300px); 
+} .content-carrousel figure:nth-child(10) {
+	transform: rotateY(360deg) translateZ(300px); 
+} 
+
+.shadow {
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px #000;
+    border-radius: 1px;
+}
+
+.content-carrousel img {
+	image-rendering: auto;
+	transition: all 300ms;
+	width: 100%;
+	height: 100%;
+}
+
+.content-carrousel img:hover {
+	transform: scale(1.1);
+    transition: all 300ms;
+}
+
+@keyframes rotar {
+	from {
+		transform: rotateY(0deg);
+	} to {
+		transform: rotateY(360deg);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media-Queries */
+
+@media(max-width:425px){
+    
+    html, body{
+        font-size: 18px;
+        padding-top: 3.9em;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+
+    .h3-detalle-descripcion{
+        font-size: 20px;
+     padding: 40px 0px;
+    }
+
+    .relacionados-extra{
+        display: inline;
+        justify-content: space-around;
+    
+    }
+
+}
+/*
+1. fijar fondo bien para mobile y eso
+2. centrar todo.
+*/

@@ -1,0 +1,40 @@
+main{
+    height: 1500px;
+    color: white;
+}
+.container-fluid{
+    background-color:black;
+}
+.banner-perfil img{
+    height: 400px;
+    width: 100%;
+}
+.container{
+    padding: 90px;
+ text-align: center;
+ overflow: hidden;
+}
+.ppal{
+    padding:70px;
+    border: 4px dotted rgb(146, 0, 0);
+}
+.avatar{
+    border-radius: 55%;
+    border: 4px solid rgb(146, 0, 0);
+    padding: 170px;
+}
+section h2{
+    font-size: 20px;
+}
+.datos{
+    text-align: justify;
+    padding-left: 80px;
+    padding-top: 35px;
+}
+.editar{
+    padding-top: 50px;
+}
+.btn{
+    width: 320px;
+}
+

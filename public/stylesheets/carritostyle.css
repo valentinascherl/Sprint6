@@ -1,0 +1,245 @@
+/*CARRITO DE COMPRAS*/
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    /*min-height: 100vh;*/
+    margin: 0;
+    font-size: 12px;
+    margin-top: -10em;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    width: 100%;
+}
+p{
+    color: black;
+}
+
+/*Main*/
+.container-fluid{
+    padding-top: 8em;
+    background-color: black;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.titulo{
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: rgb(146, 0, 0);
+    margin-top: -60px;
+<<<<<<< HEAD
+    padding: 2px;
+=======
+>>>>>>> 1ba4f1206abd4c95b02eb92cd51c03a6fdc9a245
+
+}
+.titulo i{
+    padding-right: 10px;
+}
+.titulo h1{
+    font-size: 18px;
+    color:white;
+    font-weight: bold;
+}
+.products-box-image img{
+    height: 120px;
+    width: 100px;
+}
+.product-box_data p{
+    font-size: 20px;
+    color: white;
+}
+
+.products-wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+   /* box-shadow: 2px 2px 5px #999;*/
+    border-radius: 4px;
+}
+.products-box{
+    display: flex;
+    background-color: #191919;
+}
+.form{
+    padding-left:30px;
+    overflow: hidden;
+}
+.form label{
+    padding-top: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+}
+.form i{
+    float: right;
+    position: absolute;
+    top: 6em;
+    right: 22px;
+    font-size: 1.4em;
+    transition: all 500ms ease;
+    color: rgb(146, 0, 0);
+}
+.form i:hover{
+    transform: rotate(180deg);
+}
+.form span{
+    position: absolute;
+    top: 5.5em;
+    left: 8em;
+    float: left;
+    font-size: 18px;
+    color: white;
+}
+.subtotal{
+    padding-top: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #999;
+}
+.subtotal h2{
+    color: white;
+}
+.subtotal span{
+    padding-left: 5px;
+    font-weight: bold;
+    color: white;
+}
+.envio{
+    padding-top: 25px;
+    overflow: hidden;
+    border-bottom: 1px solid #999;
+    padding-bottom: 20px;
+}
+.envio h2{
+    color: white;
+}
+.envio i{
+    padding-right: 5px;
+    padding-bottom: 8px;
+    color: rgb(146, 0, 0);
+}
+.envio textarea{
+    float: left;
+}
+.envio button{
+    float: right;
+    background-color: rgb(146, 0, 0);
+    border: rgb(146, 0, 0);
+    margin-top: 5px;
+}
+.total{
+    padding-top: 25px;
+    overflow: hidden;
+}
+.total span{
+    float: right;
+    font-weight: bold;
+    color: white;
+}
+.comprar{
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.comprar a{
+    float: center;
+    text-decoration: underline;
+    color:rgb(146, 0, 0);
+    padding-top: -6px;
+}
+.comprar button{
+    background-color: rgb(146, 0, 0);
+    border: rgb(146, 0, 0);
+}
+
+@media(min-width: 426px){
+    html, body{
+        padding-top: 5em;
+    }
+    p{
+        font-size: 20px;
+    }
+    .container-fluid{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .titulo h1{
+        font-size: 23px;
+    }
+    .products-box-image img{
+        height: 260px;
+        width: 240px;
+    }
+    .form{
+        padding-left: 50px;
+    }
+    .form label{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .options{
+        height: 45px;
+    }
+    .form i{
+        font-size: 2.4em;
+        top: 7.8em;
+        right: 92px;
+    }
+    .form span{
+        font-size: 38px;
+    }
+
+
+}
+@media(min-width: 769px){
+    p{
+        font-size: 25px;
+    }
+    .container-fluid{
+        padding-right: 55px;
+        padding-left: 55px;
+    }
+    .titulo h1{
+        font-size: 32px;
+    }
+    .products-wrapper{
+        box-shadow: none;
+        padding: 20px;
+    }
+    .products-box{
+        box-shadow: 2px 2px 5px #999;
+        border-radius: 4px;
+        padding:15px;
+        margin-bottom: 15px;
+    }
+    .todo{
+        display: flex;
+    }
+    .form{
+        padding-left: 60px;
+    }
+    .form span{
+        left: 9em;
+    }
+    .pago{
+        /*box-shadow: 2px 2px 5px #999;
+        box-shadow: 2px 2px 5px rgb(146, 0, 0);*/
+        border: 3px dashed rgb(146, 0, 0);
+        height: 590px;
+        margin-top: 40px;
+        /*background-color: #191919;*/
+        background-color: #191919;
+
+    }
+    .pago h1{
+        padding-top: 20px;
+        border-bottom: 1px solid #999;
+        padding-bottom: 15px;
+        font-weight: 300;
+        color: white;
+    }
+}
